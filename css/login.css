@@ -1,0 +1,59 @@
+/*GENERAL*/
+html{
+    height: 100%;
+}
+body{
+    background-color: var(--clr-main);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.container{
+    width: 85%;
+    height: 85%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: var(--clr-white);
+}
+
+
+/*CONTENIDO*/
+h2{
+    font-size: 1.5vw;
+    margin: 1rem;
+    color: var(--clr-main);
+}
+/*Formulario*/
+#formulario{
+    display: flex;
+    flex-flow: column wrap;
+    width: 50rem;
+}
+#formulario #nombre,#password{
+    height: 3rem;
+    margin: 1rem;
+    border-radius: 5px;
+}
+/*Botones*/
+#botones{
+    display: flex;
+    flex-flow: column wrap;
+}
+#botones #submit,#limpiar{
+    height: 3rem;
+    margin: 0.5rem 1rem 0px 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--clr-main);
+    font-size: 0.7vw;
+    color: var(--clr-gray);
+}
+#botones #submit:hover,#limpiar:hover{
+    background-color: var(--clr-main-light);
+}
