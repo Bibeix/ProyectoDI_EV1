@@ -11,21 +11,24 @@ body{
     height: 100%;
 }
 
+
+/*CONTENEDOR*/
 .container{
-    width: 85%;
-    height: 85%;
+    width: 60rem;
+    height: 35rem;
+    /*Comprobar si queda bien la redimensión si en vez de tamaño pongo padding relativo*/
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 20px;
     background-color: var(--clr-white);
 }
 
 
 /*CONTENIDO*/
 h2{
-    font-size: 1.5vw;
+    font-size: 2.5rem;
     margin: 1rem;
     color: var(--clr-main);
 }
@@ -51,7 +54,7 @@ h2{
     border-radius: 5px;
     border: none;
     background-color: var(--clr-main);
-    font-size: 0.7vw;
+    font-size: 1rem;
     color: var(--clr-gray);
 }
 #botones #submit:hover,#limpiar:hover{

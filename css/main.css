@@ -1,0 +1,48 @@
+html,body{
+    height: 100%;
+}
+
+/*FORMATO MOBIL*/
+.header-mobile{
+    display: none;
+}
+.close-menu{
+    display: none;
+}
+
+/*CONTENEDOR*/
+.contenedor{
+    background-color: var(--clr-main);
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+}
+
+
+/*CONTENIDO*/
+main{
+    margin: 1rem;
+    padding: 2rem;
+    width: 80%;
+    border-radius: 20px;
+    background-color: var(--clr-white);
+}
+main h2{
+    color: var(--clr-main);
+}
+
+.aside-visible{
+    margin: 1rem;
+    padding: 1rem;
+    width: 15%;
+    display: flex;
+    flex-flow: column wrap;
+}
+nav{
+    height: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+footer{
+}
