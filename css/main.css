@@ -15,6 +15,7 @@ html,body{
     background-color: var(--clr-main);
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
     justify-content: space-around;
     height: 100%;
 }
@@ -24,25 +25,68 @@ html,body{
 
 /*PRINCIPAL*/
 main{
-    margin: 1rem 0px 1rem 0px;
     padding: 2rem;
     width: 80%;
+    height: 95%;
     border-radius: 20px;
     background-color: var(--clr-white);
 }
-main h2{
+#titulo-principal{
     color: var(--clr-main);
     padding: 1rem;
 }
+#contenedor-productos{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(5,1fr);
+    overflow-y:auto;
+    height:90%;
+}
+
+
+.producto{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+.producto-imagen{
+    width: 100%;
+    height: 70%;
+}
+.producto-detalles{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 25%;
+    background-color: var(--clr-main);
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+}
+.producto-titulo, .producto-precio{
+    color: var(--clr-white);
+}
+.producto-agregar{
+    border: none;
+    border-radius: 10px;
+    background-color: var(--clr-white);
+    color: var(--clr-main);
+    padding: 0.5rem 0px;
+    width: 100%;
+}
+
+
 /*BARRA LATERAL*/
 .aside-visible{
     padding: 3rem 1rem 1rem 1rem;
+    height: 95%;
     width: 15%;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
 }
-.aside-visible h1{
+.aside-visible .logo{
     padding-top: 2rem;
     font-size: 1.5rem;
     color: var(--clr-white);
@@ -50,25 +94,28 @@ main h2{
     justify-self: center;
 }
 /*BOTONES*/
-nav ul li{
+nav{
+    height: 50%;
+}
+nav .menu li{
     width: 100%;
     border-radius: 10px;
-    margin: 3rem 0px 3rem 0px;
-    padding: 0.8rem;
+    margin: 3vh 0px 3vh 0px;
+    padding: 0.8vh 0.8rem;
 }
-nav ul li button, .boton-carrito{
+nav .menu li button, .boton-carrito{
     color: var(--clr-white);
     font-size: 1rem;
     background:none;
     border: none;
 }
-nav ul li button i, .boton-carrito i{
+nav .menu li button i, .boton-carrito i{
     margin-right: 0.5rem;
 }
-nav ul li:hover{
+nav .menu li:hover{
     background-color: var(--clr-white);
 }
-nav ul li:hover button, nav ul li:hover .boton-carrito{
+nav .menu li:hover button, nav ul li:hover .boton-carrito{
     color: var(--clr-main);
 }
 /*FOOTER*/
