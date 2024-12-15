@@ -10,7 +10,7 @@ const cargarJSON = () =>{
     .then((res) => res.json())
     .then((data) => {
         productos = data; 
-        mostrarCarrito(); 
+        mostrarCarrito();
     })
 }
 
